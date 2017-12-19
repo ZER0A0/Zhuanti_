@@ -45,6 +45,8 @@ public class Stage01 extends JFrame {
     private int testw2 = 1000 , testh2 = 742 , testtime12 = 0 , testtime22 = 0;
     private Timer testt1 , testt2;
     private Timer testt12 , testt22;
+    private Timer udi;
+    private int udidi = 0 , option = 0;
 
     private JLabel jlbHPPla = new JLabel();
     private JLabel jlbHPPlaB = new JLabel();
@@ -68,7 +70,7 @@ public class Stage01 extends JFrame {
         this.setLayout(null);
         this.setTitle("請輸入標題");
 
-        jlbPlayer.setBounds(Plaw, Plah, 200, 192);
+        jlbPlayer.setBounds(Plaw, Plah, 200, 200);
         this.add(jlbPlayer);
 
         //ABC
@@ -122,6 +124,13 @@ public class Stage01 extends JFrame {
                 if (testtime22 == 40){testt22.stop();testt12.start();testtime22 = 0;}
             }
         });
+        udi = new Timer(100, new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                udidi += 1;
+                if(udidi == 3){udi.stop();udidi = 0;option = 0;}
+            }
+        });
 
         jlbHat1.setBounds(Plaw , Plah , 85 , 28);
         jlbHat2.setBounds(Plaw , Plah , 85 , 28);
@@ -151,14 +160,14 @@ public class Stage01 extends JFrame {
         this.add(jlbHPPlaB);
         this.add(jlbHPBosB);
 
-        jumput = new Timer(50, new ActionListener() {
+        jumput = new Timer(35, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 jlbPlayer.setBounds(Plaw , Plah -= 30 , 200, 200);
                 if(Plah == 297){jumput.stop() ; jumpdt.start();}
             }
         });
-        jumpdt = new Timer(50, new ActionListener() {
+        jumpdt = new Timer(35, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 jlbPlayer.setBounds(Plaw , Plah += 30 , 200, 200);
@@ -168,79 +177,61 @@ public class Stage01 extends JFrame {
                     jlock = 0;}
             }
         });
-        rightatt1 = new Timer(50, new ActionListener() {
+        rightatt1 = new Timer(40, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 jlbHat1.setBounds(Haw1 += 40 , Hah1 , 85 , 28);
                 hatime1 += 1;
                 /////
-                if(Haw1 >= Bosw + 40){rightatt1.stop();jlbHat1.setVisible(false);HPBosh-=2;jlbHPBos.setBounds(fw / 2  + 510 , fh / 2 - HPBosh - 150 , 30 , HPBosh);halock1 = 0;}
+                if(Haw1 >= Bosw + 40){rightatt1.stop();jlbHat1.setVisible(false);if(option == 0){HPBosh-=2;jlbHPBos.setBounds(fw / 2  + 510 , fh / 2 - HPBosh - 150 , 30 , HPBosh);}halock1 = 0;udi.start();option = 1;}
                 /////
-                if(hatime1 == 10){rightatt1.stop() ; jlbHat1.setVisible(false) ; halock1 = 0;
-                    if(jlock == 0 && dlock == 0){
-                        if(direction == 0){jlbPlayer.setIcon(Player_RN);}
-                        else if(direction == 1){jlbPlayer.setIcon(Player_LN);}}}
+                if(hatime1 == 12){rightatt1.stop() ; jlbHat1.setVisible(false) ; halock1 = 0;}
             }
         });
-        leftatt1 = new Timer(50, new ActionListener() {
+        leftatt1 = new Timer(40, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 jlbHat1.setBounds(Haw1 -= 40 , Hah1 , 85 , 28);
                 hatime1 += 1;
-                if(hatime1 == 10){leftatt1.stop() ; jlbHat1.setVisible(false) ; halock1 = 0;
-                    if(jlock == 0 && dlock == 0){
-                        if(direction == 0){jlbPlayer.setIcon(Player_RN);}
-                        else if(direction == 1){jlbPlayer.setIcon(Player_LN);}}}
+                if(hatime1 == 12){leftatt1.stop() ; jlbHat1.setVisible(false) ; halock1 = 0;}
             }
         });
-        rightatt2 = new Timer(50, new ActionListener() {
+        rightatt2 = new Timer(40, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 jlbHat2.setBounds(Haw2 += 40 , Hah2 , 85 , 28);
                 hatime2 += 1;
                 /////
-                if(Haw2 >= Bosw + 40){rightatt2.stop();jlbHat2.setVisible(false);HPBosh-=2;jlbHPBos.setBounds(fw / 2  + 510 , fh / 2 - HPBosh - 150 , 30 , HPBosh);halock2 = 0;}
+                if(Haw2 >= Bosw + 40){rightatt2.stop();jlbHat2.setVisible(false);if(option == 0){HPBosh-=2;jlbHPBos.setBounds(fw / 2  + 510 , fh / 2 - HPBosh - 150 , 30 , HPBosh);}halock2 = 0;udi.start();option = 1;}
                 /////
-                if(hatime2 == 10){rightatt2.stop() ; jlbHat2.setVisible(false) ; halock2 = 0;
-                    if(jlock == 0 && dlock == 0){
-                        if(direction == 0){jlbPlayer.setIcon(Player_RN);}
-                        else if(direction == 1){jlbPlayer.setIcon(Player_LN);}}}
+                if(hatime2 == 12){rightatt2.stop() ; jlbHat2.setVisible(false) ; halock2 = 0;}
             }
         });
-        leftatt2 = new Timer(50, new ActionListener() {
+        leftatt2 = new Timer(40, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 jlbHat2.setBounds(Haw2 -= 40 , Hah2 , 85 , 28);
                 hatime2 += 1;
-                if(hatime2 == 10){leftatt2.stop() ; jlbHat2.setVisible(false) ; halock2 = 0;
-                    if(jlock == 0 && dlock == 0){
-                        if(direction == 0){jlbPlayer.setIcon(Player_RN);}
-                        else if(direction == 1){jlbPlayer.setIcon(Player_LN);}}}
+                if(hatime2 == 12){leftatt2.stop() ; jlbHat2.setVisible(false) ; halock2 = 0;}
             }
         });
-        rightatt3 = new Timer(50, new ActionListener() {
+        rightatt3 = new Timer(40, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 jlbHat3.setBounds(Haw3 += 40 , Hah3 , 85 , 28);
                 hatime3 += 1;
                 /////
-                if(Haw3 >= Bosw + 40){rightatt3.stop();jlbHat3.setVisible(false);HPBosh-=2;jlbHPBos.setBounds(fw / 2  + 510 , fh / 2 - HPBosh - 150 , 30 , HPBosh);halock3 = 0;}
+                if(Haw3 >= Bosw + 40){rightatt3.stop();jlbHat3.setVisible(false);if(option == 0){HPBosh-=2;jlbHPBos.setBounds(fw / 2  + 510 , fh / 2 - HPBosh - 150 , 30 , HPBosh);}halock3 = 0;udi.start();option = 1;}
                 /////
-                if(hatime3 == 10){rightatt3.stop() ; jlbHat3.setVisible(false) ; halock3 = 0;
-                    if(jlock == 0 && dlock == 0){
-                        if(direction == 0){jlbPlayer.setIcon(Player_RN);}
-                        else if(direction == 1){jlbPlayer.setIcon(Player_LN);}}}
+                if(hatime3 == 12){rightatt3.stop() ; jlbHat3.setVisible(false) ; halock3 = 0;}
             }
         });
-        leftatt3 = new Timer(50, new ActionListener() {
+        leftatt3 = new Timer(40, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 jlbHat3.setBounds(Haw3 -= 40 , Hah3 , 85 , 28);
                 hatime3 += 1;
-                if(hatime3 == 10){leftatt3.stop() ; jlbHat3.setVisible(false) ; halock3 = 0;
-                    if(jlock == 0 && dlock == 0){
-                        if(direction == 0){jlbPlayer.setIcon(Player_RN);}
-                        else if(direction == 1){jlbPlayer.setIcon(Player_LN);}}}
+                if(hatime3 == 12){leftatt3.stop() ; jlbHat3.setVisible(false) ; halock3 = 0;}
             }
         });
 
@@ -254,21 +245,21 @@ public class Stage01 extends JFrame {
             switch(key) {
                 case KeyEvent.VK_LEFT :
                     direction = 1;
-                    dlock = 0;
                     if(Plaw - 40 >= 0){
                         jlbPlayer.setBounds(Plaw -= 40 , Plah, 200, 200);}
-                    if(foot == 0 && jlock == 0){jlbPlayer.setIcon(Player_L2) ; foot = 1;}
-                    else if(foot == 1 && jlock == 0){jlbPlayer.setIcon(Player_L1) ; foot = 0;}
+                    if(foot == 0 && jlock == 0 && dlock == 0){jlbPlayer.setIcon(Player_L2) ; foot = 1;}
+                    else if(foot == 1 && jlock == 0 && dlock == 0){jlbPlayer.setIcon(Player_L1) ; foot = 0;}
                     else if(jlock == 1){jlbPlayer.setIcon(Player_LJ);}
+                    else if(dlock == 1){jlbPlayer.setIcon(Player_LD);}
                     break;
                 case KeyEvent.VK_RIGHT :
                     direction = 0;
-                    dlock = 0;
                     if(Plaw + 40 <= 1000){
                         jlbPlayer.setBounds(Plaw += 40 , Plah, 200, 200);}
-                    if(foot == 0 && jlock == 0){jlbPlayer.setIcon(Player_R2) ; foot = 1;}
-                    else if(foot == 1 && jlock == 0){jlbPlayer.setIcon(Player_R1) ; foot = 0;}
+                    if(foot == 0 && jlock == 0 && dlock == 0){jlbPlayer.setIcon(Player_R2) ; foot = 1;}
+                    else if(foot == 1 && jlock == 0 && dlock == 0){jlbPlayer.setIcon(Player_R1) ; foot = 0;}
                     else if(jlock == 1){jlbPlayer.setIcon(Player_RJ);}
+                    else if(dlock == 1){jlbPlayer.setIcon(Player_RD);}
                     break;
                 case KeyEvent.VK_UP :
                     if(jlock == 0){dlock = 0;
@@ -281,7 +272,7 @@ public class Stage01 extends JFrame {
                     if(dlock == 0 && jlock == 0){
                         if(direction == 0){jlbPlayer.setIcon(Player_RD);}
                         else if(direction == 1){jlbPlayer.setIcon(Player_LD);}
-                        dlock = 1;}
+                    dlock = 1;}
                     break;
                 case KeyEvent.VK_Z :
                     if(halock1 == 0){
@@ -320,9 +311,25 @@ public class Stage01 extends JFrame {
                     break;
 
                 /////625     756    530 551
-                case KeyEvent.VK_R :
+                case KeyEvent.VK_X:
                     testw = 1000 ; testh = 559;test.setBounds(testw , testh , 85 , 28);testtime1 = 0 ; testtime2 = 0;testt1.stop();testt2.stop();testt1.start();test.setVisible(true);
                     testw2 = 1000 ; testh2 = 742;test2.setBounds(testw2 , testh2 , 85 , 28);testtime12 = 0 ; testtime22 = 0;testt12.stop();testt22.stop();testt12.start();test2.setVisible(true);
+                    break;
+            }
+        }
+        public void keyReleased(KeyEvent e){
+            int key = e.getKeyCode();
+            switch(key) {
+                case KeyEvent.VK_DOWN :
+                    if(jlock == 0){
+                    if(direction == 0){jlbPlayer.setIcon(Player_RN);}
+                    else if(direction == 1){jlbPlayer.setIcon(Player_LN);}
+                    dlock = 0;}
+                    break;
+                case KeyEvent.VK_Z :
+                    if(jlock == 0 && dlock == 0){
+                        if(direction == 0){jlbPlayer.setIcon(Player_RN);}
+                        else if(direction == 1){jlbPlayer.setIcon(Player_LN);}}
                     break;
             }
         }
