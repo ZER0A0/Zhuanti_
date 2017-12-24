@@ -36,18 +36,6 @@ public class Stage01 extends JFrame {
     private int Haw2 , Hah2 , hatime2 , halock2 = 0;
     private int Haw3 , Hah3 , hatime3 , halock3 = 0;
 
-    //ABC
-    private JLabel jlbBoss = new JLabel(Player_LN);
-    private int Bosw = 1000 , Bosh = 565;
-    private JLabel test = new JLabel(Hat);
-    private JLabel test2 = new JLabel(Hat);
-    private int testw = 1000 , testh = 559 , testtime1 = 0 , testtime2 = 0;
-    private int testw2 = 1000 , testh2 = 742 , testtime12 = 0 , testtime22 = 0;
-    private Timer testt1 , testt2;
-    private Timer testt12 , testt22;
-    private Timer udi;
-    private int udidi = 0 , option = 0;
-
     private JLabel jlbHPPla = new JLabel();
     private JLabel jlbHPPlaB = new JLabel();
     private JLabel jlbHPBos = new JLabel();
@@ -72,65 +60,6 @@ public class Stage01 extends JFrame {
 
         jlbPlayer.setBounds(Plaw, Plah, 200, 200);
         this.add(jlbPlayer);
-
-        //ABC
-        jlbBoss.setBounds(Bosw , Bosh , 200 , 200);
-        this.add(jlbBoss);
-        test.setBounds(testw , testh , 85 , 28);
-        test2.setBounds(testw2 , testh2 , 85 , 28);
-        this.add(test);
-        this.add(test2);
-        testt1 = new Timer(50, new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                test.setBounds(testw -= 20 , testh , 85 , 28);
-                testtime1 += 1;
-                if(dlock == 0 && jlock == 0){if(testw <= Plaw+100 && testw >= Plaw && testh + 28 >= Plah + 12&& testh <= Plah +189){testt1.stop();testtime1 = 0;HPPlah -= 2;jlbHPPla.setBounds(fw / 2  - 550 , fh / 2 - HPPlah - 150 , 30 , HPPlah);test.setVisible(false);}}
-                else if(dlock == 1){if(testw <= Plaw+140 && testw >= Plaw - 20 && testh + 28 >= Plah + 65&& testh <= Plah +189){testt1.stop();testtime1 = 0;HPPlah -= 2;jlbHPPla.setBounds(fw / 2  - 550 , fh / 2 - HPPlah - 150 , 30 , HPPlah);test.setVisible(false);}}
-                else if(jlock == 1){if(testw <= Plaw+140 && testw >= Plaw - 20 && testh + 28 >= Plah + 20&& testh <= Plah +175){testt1.stop();testtime1 = 0;HPPlah -= 2;jlbHPPla.setBounds(fw / 2  - 550 , fh / 2 - HPPlah - 150 , 30 , HPPlah);test.setVisible(false);}}
-                if (testtime1 == 40){testt1.stop();testt2.start();testtime1 = 0;}
-            }
-        });
-        testt2 = new Timer(50, new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                test.setBounds(testw += 20 , testh , 85 , 28);
-                testtime2 += 1;
-                if(dlock == 0 && jlock == 0){if(testw <= Plaw+100 && testw >= Plaw && testh + 28 >= Plah + 12&& testh <= Plah +189){testt2.stop();testtime2 = 0;HPPlah -= 2;jlbHPPla.setBounds(fw / 2  - 550 , fh / 2 - HPPlah - 150 , 30 , HPPlah);test.setVisible(false);}}
-                else if(dlock == 1){if(testw <= Plaw+140 && testw >= Plaw -20 && testh + 28 >= Plah + 65&& testh <= Plah +189){testt2.stop();testtime2 = 0;HPPlah -= 2;jlbHPPla.setBounds(fw / 2  - 550 , fh / 2 - HPPlah - 150 , 30 , HPPlah);test.setVisible(false);}}
-                else if(jlock == 1){if(testw <= Plaw+140 && testw >= Plaw - 20 && testh + 28 >= Plah + 20&& testh <= Plah +175){testt2.stop();testtime2 = 0;HPPlah -= 2;jlbHPPla.setBounds(fw / 2  - 550 , fh / 2 - HPPlah - 150 , 30 , HPPlah);test.setVisible(false);}}
-                if (testtime2 == 40){testt2.stop();testt1.start();testtime2 = 0;}
-            }
-        });
-        testt12 = new Timer(50, new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                test2.setBounds(testw2 -= 20 , testh2 , 85 , 28);
-                testtime12 += 1;
-                if(dlock == 0 && jlock == 0){if(testw2 <= Plaw+100 && testw2 >= Plaw && testh2 + 28 >= Plah + 20 && testh2 <= Plah +189){testt12.stop();testtime12 = 0;HPPlah -= 2;jlbHPPla.setBounds(fw / 2  - 550 , fh / 2 - HPPlah - 150 , 30 , HPPlah);test2.setVisible(false);}}
-                else if(dlock == 1){if(testw2 <= Plaw+140 && testw2 >= Plaw - 20 && testh2 + 28 >= Plah + 65 && testh2 <= Plah +189){testt12.stop();testtime12 = 0;HPPlah -= 2;jlbHPPla.setBounds(fw / 2  - 550 , fh / 2 - HPPlah - 150 , 30 , HPPlah);test2.setVisible(false);}}
-                else if(jlock == 1){if(testw2 <= Plaw+140 && testw2 >= Plaw - 20 && testh2 + 28 >= Plah + 20&& testh2 <= Plah +175){testt12.stop();testtime12 = 0;HPPlah -= 2;jlbHPPla.setBounds(fw / 2  - 550 , fh / 2 - HPPlah - 150 , 30 , HPPlah);test2.setVisible(false);}}
-                if (testtime12 == 40){testt12.stop();testt22.start();testtime12 = 0;}
-            }
-        });
-        testt22 = new Timer(50, new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                test2.setBounds(testw2 += 20 , testh2 , 85 , 28);
-                testtime22 += 1;
-                if(dlock == 0 && jlock == 0){if(testw2 <= Plaw+100 && testw2 >= Plaw && testh2 + 28 >= Plah + 12 && testh2 <= Plah +189){testt22.stop();testtime22 = 0;HPPlah -= 2;jlbHPPla.setBounds(fw / 2  - 550 , fh / 2 - HPPlah - 150 , 30 , HPPlah);test2.setVisible(false);}}
-                else if(dlock == 1){if(testw2 <= Plaw+140 && testw2 >= Plaw - 20 && testh2 + 28 >= Plah + 65 && testh2 <= Plah +189){testt22.stop();testtime22 = 0;HPPlah -= 2;jlbHPPla.setBounds(fw / 2  - 550 , fh / 2 - HPPlah - 150 , 30 , HPPlah);test2.setVisible(false);}}
-                else if(jlock == 1){if(testw2 <= Plaw+140 && testw2 >= Plaw - 20 && testh2 + 28 >= Plah + 20&& testh2 <= Plah +175){testt22.stop();testtime22 = 0;HPPlah -= 2;jlbHPPla.setBounds(fw / 2  - 550 , fh / 2 - HPPlah - 150 , 30 , HPPlah);test2.setVisible(false);}}
-                if (testtime22 == 40){testt22.stop();testt12.start();testtime22 = 0;}
-            }
-        });
-        udi = new Timer(100, new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                udidi += 1;
-                if(udidi == 3){udi.stop();udidi = 0;option = 0;}
-            }
-        });
 
         jlbHat1.setBounds(Plaw , Plah , 85 , 28);
         jlbHat2.setBounds(Plaw , Plah , 85 , 28);
@@ -182,9 +111,6 @@ public class Stage01 extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 jlbHat1.setBounds(Haw1 += 40 , Hah1 , 85 , 28);
                 hatime1 += 1;
-                /////
-                if(Haw1 >= Bosw + 40){rightatt1.stop();jlbHat1.setVisible(false);if(option == 0){HPBosh-=2;jlbHPBos.setBounds(fw / 2  + 510 , fh / 2 - HPBosh - 150 , 30 , HPBosh);}halock1 = 0;udi.start();option = 1;}
-                /////
                 if(hatime1 == 12){rightatt1.stop() ; jlbHat1.setVisible(false) ; halock1 = 0;}
             }
         });
@@ -201,9 +127,6 @@ public class Stage01 extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 jlbHat2.setBounds(Haw2 += 40 , Hah2 , 85 , 28);
                 hatime2 += 1;
-                /////
-                if(Haw2 >= Bosw + 40){rightatt2.stop();jlbHat2.setVisible(false);if(option == 0){HPBosh-=2;jlbHPBos.setBounds(fw / 2  + 510 , fh / 2 - HPBosh - 150 , 30 , HPBosh);}halock2 = 0;udi.start();option = 1;}
-                /////
                 if(hatime2 == 12){rightatt2.stop() ; jlbHat2.setVisible(false) ; halock2 = 0;}
             }
         });
@@ -220,9 +143,6 @@ public class Stage01 extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 jlbHat3.setBounds(Haw3 += 40 , Hah3 , 85 , 28);
                 hatime3 += 1;
-                /////
-                if(Haw3 >= Bosw + 40){rightatt3.stop();jlbHat3.setVisible(false);if(option == 0){HPBosh-=2;jlbHPBos.setBounds(fw / 2  + 510 , fh / 2 - HPBosh - 150 , 30 , HPBosh);}halock3 = 0;udi.start();option = 1;}
-                /////
                 if(hatime3 == 12){rightatt3.stop() ; jlbHat3.setVisible(false) ; halock3 = 0;}
             }
         });
@@ -308,12 +228,6 @@ public class Stage01 extends JFrame {
                         else if(direction == 1 && jlock == 0 && dlock == 0){jlbPlayer.setIcon(Player_LA);}
                         hatime3 = 0;
                         halock3 = 1;}
-                    break;
-
-                /////625     756    530 551
-                case KeyEvent.VK_X:
-                    testw = 1000 ; testh = 559;test.setBounds(testw , testh , 85 , 28);testtime1 = 0 ; testtime2 = 0;testt1.stop();testt2.stop();testt1.start();test.setVisible(true);
-                    testw2 = 1000 ; testh2 = 742;test2.setBounds(testw2 , testh2 , 85 , 28);testtime12 = 0 ; testtime22 = 0;testt12.stop();testt22.stop();testt12.start();test2.setVisible(true);
                     break;
             }
         }
