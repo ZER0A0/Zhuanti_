@@ -62,8 +62,8 @@ public class MainFrame extends JFrame{
                     break;
                 case KeyEvent.VK_ENTER :
                     if(Haw == 255){
-                        Stage01 S01 = new Stage01();
-                        S01.setVisible(true);
+                        Stage stage = new Stage();
+                        stage.setVisible(true);
                         MainFrame.this.setVisible(false); }
                     else System.exit(0);
             }
