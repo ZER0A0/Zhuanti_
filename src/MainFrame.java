@@ -7,7 +7,7 @@ public class MainFrame extends JFrame{
     public MainFrame(){
         initComp();
     }
- private JLabel jlbStart = new JLabel("Start",JLabel.CENTER);
+    private JLabel jlbStart = new JLabel("Start",JLabel.CENTER);
     private JLabel jlbExit = new JLabel("Exit",JLabel.CENTER);
 
     private JLabel jlbTitle = new JLabel("請輸入標題",JLabel.CENTER);
