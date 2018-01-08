@@ -159,7 +159,7 @@ public class Stage extends JFrame {
     private int Mow4 , Moh4 , Motime4;
     private int Mow5 , Moh5 , Motime5;
     private int leftMotime , rightMotime;
-    private int Handtime;
+    private int Handtime , Handw = 27;
 
     private int MoGtype;
 
@@ -173,7 +173,7 @@ public class Stage extends JFrame {
     private Timer Handt1 , Handt2;
 
     //TEST
-    private JLabel jlbHatTEST = new JLabel(MoG_9);
+    private JLabel jlbHatTEST = new JLabel(Hand_L3);
     private int HawTEST , HahTEST , hatimeTEST;
     private Timer rightattTEST;
 
@@ -357,6 +357,10 @@ public class Stage extends JFrame {
             }
         });
 
+        //Boss
+        jlbBoss.setBounds(Bosw, Bosh, 200, 200);
+        this.add(jlbBoss);
+
         //Boss Attack
         jlbMoG1.setBounds(1000 , 620 , 50 , 50);
         jlbMoG2.setBounds(1000 , 620 , 50 , 50);
@@ -451,55 +455,61 @@ public class Stage extends JFrame {
             public void actionPerformed(ActionEvent e) {
             }
         });
-        Handt1 = new Timer(15, new ActionListener() {
+        Handt1 = new Timer(30, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Handtime += 1;
+                Handw += 27;
+                if(Mow1 - Handw >= Plaw - 700 && Mow1 - Handw <= Plaw - 410 && Moh1 >= Plah - 20 && Moh1 <= Plah + 168){
+                    jlbHPPla.setBounds(fw / 2  - 550 , HPPlay += BosDamage , 30 , HPPlah -= BosDamage);
+                }
                 if(Handtime == 1){jlbMoG1.setIcon(Hand_L2);}
-                else if(Handtime == 3){jlbMoG1.setIcon(Hand_L3);}
-                else if(Handtime == 5){jlbMoG1.setIcon(Hand_L4);}
-                else if(Handtime == 7){jlbMoG1.setIcon(Hand_L5);}
-                else if(Handtime == 9){jlbMoG1.setIcon(Hand_L6);}
-                else if(Handtime == 11){jlbMoG1.setIcon(Hand_L7);}
-                else if(Handtime == 13){jlbMoG1.setIcon(Hand_L8);}
-                else if(Handtime == 15){jlbMoG1.setIcon(Hand_L9);}
-                else if(Handtime == 17){jlbMoG1.setIcon(Hand_L10);}
-                else if(Handtime == 19){jlbMoG1.setIcon(Hand_L11);}
-                else if(Handtime == 21){jlbMoG1.setIcon(Hand_L12);}
-                else if(Handtime == 23){jlbMoG1.setIcon(Hand_L13);}
-                else if(Handtime == 25){jlbMoG1.setIcon(Hand_L14);}
-                else if(Handtime == 27){jlbMoG1.setIcon(Hand_L15);}
-                else if(Handtime == 29){jlbMoG1.setIcon(Hand_L16);}
-                else if(Handtime == 31){jlbMoG1.setIcon(Hand_L17);}
-                else if(Handtime == 33){jlbMoG1.setIcon(Hand_L18);}
-                else if(Handtime == 35){jlbMoG1.setIcon(Hand_L19);}
-                else if(Handtime == 37){jlbMoG1.setIcon(Hand_L20);}
-                else if(Handtime == 39){Handt2.start() ; Handt1.stop();}
+                else if(Handtime == 2){jlbMoG1.setIcon(Hand_L3);}
+                else if(Handtime == 3){jlbMoG1.setIcon(Hand_L4);}
+                else if(Handtime == 4){jlbMoG1.setIcon(Hand_L5);}
+                else if(Handtime == 5){jlbMoG1.setIcon(Hand_L6);}
+                else if(Handtime == 6){jlbMoG1.setIcon(Hand_L7);}
+                else if(Handtime == 7){jlbMoG1.setIcon(Hand_L8);}
+                else if(Handtime == 8){jlbMoG1.setIcon(Hand_L9);}
+                else if(Handtime == 9){jlbMoG1.setIcon(Hand_L10);}
+                else if(Handtime == 10){jlbMoG1.setIcon(Hand_L11);}
+                else if(Handtime == 11){jlbMoG1.setIcon(Hand_L12);}
+                else if(Handtime == 12){jlbMoG1.setIcon(Hand_L13);}
+                else if(Handtime == 13){jlbMoG1.setIcon(Hand_L14);}
+                else if(Handtime == 14){jlbMoG1.setIcon(Hand_L15);}
+                else if(Handtime == 15){jlbMoG1.setIcon(Hand_L16);}
+                else if(Handtime == 16){jlbMoG1.setIcon(Hand_L17);}
+                else if(Handtime == 17){jlbMoG1.setIcon(Hand_L18);}
+                else if(Handtime == 18){jlbMoG1.setIcon(Hand_L19);}
+                else if(Handtime == 19){jlbMoG1.setIcon(Hand_L20);}
+                else if(Handtime == 20){Mow1 += 13 ; Handt2.start() ; Handt1.stop();}
                 }
         });
-        Handt2 = new Timer(15, new ActionListener() {
+        Handt2 = new Timer(30, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Handtime -= 1;
-                if(Handtime == 37){jlbMoG1.setIcon(Hand_L19);}
-                else if(Handtime == 35){jlbMoG1.setIcon(Hand_L18);}
-                else if(Handtime == 33){jlbMoG1.setIcon(Hand_L17);}
-                else if(Handtime == 31){jlbMoG1.setIcon(Hand_L16);}
-                else if(Handtime == 29){jlbMoG1.setIcon(Hand_L15);}
-                else if(Handtime == 27){jlbMoG1.setIcon(Hand_L14);}
-                else if(Handtime == 25){jlbMoG1.setIcon(Hand_L13);}
-                else if(Handtime == 23){jlbMoG1.setIcon(Hand_L12);}
-                else if(Handtime == 21){jlbMoG1.setIcon(Hand_L11);}
-                else if(Handtime == 19){jlbMoG1.setIcon(Hand_L10);}
-                else if(Handtime == 17){jlbMoG1.setIcon(Hand_L9);}
-                else if(Handtime == 15){jlbMoG1.setIcon(Hand_L8);}
-                else if(Handtime == 13){jlbMoG1.setIcon(Hand_L7);}
-                else if(Handtime == 11){jlbMoG1.setIcon(Hand_L6);}
-                else if(Handtime == 9){jlbMoG1.setIcon(Hand_L5);}
-                else if(Handtime == 7){jlbMoG1.setIcon(Hand_L4);}
-                else if(Handtime == 5){jlbMoG1.setIcon(Hand_L3);}
-                else if(Handtime == 3){jlbMoG1.setIcon(Hand_L2);}
-                else if(Handtime == 1){jlbMoG1.setIcon(Hand_L1) ; jlbMoG1.setVisible(false) ; Handtime = 0 ; Handt2.stop();}
+                if(Handtime == 19){jlbMoG1.setIcon(Hand_L19);}
+                else if(Handtime == 18){jlbMoG1.setIcon(Hand_L18);}
+                else if(Handtime == 17){jlbMoG1.setIcon(Hand_L17);}
+                else if(Handtime == 16){jlbMoG1.setIcon(Hand_L16);}
+                else if(Handtime == 15){jlbMoG1.setIcon(Hand_L15);}
+                else if(Handtime == 14){jlbMoG1.setIcon(Hand_L14);}
+                else if(Handtime == 13){jlbMoG1.setIcon(Hand_L13);}
+                else if(Handtime == 12){jlbMoG1.setIcon(Hand_L12);}
+                else if(Handtime == 11){jlbMoG1.setIcon(Hand_L11);}
+                else if(Handtime == 10){jlbMoG1.setIcon(Hand_L10);}
+                else if(Handtime == 9){jlbMoG1.setIcon(Hand_L9);}
+                else if(Handtime == 8){jlbMoG1.setIcon(Hand_L8);}
+                else if(Handtime == 7){jlbMoG1.setIcon(Hand_L7);}
+                else if(Handtime == 6){jlbMoG1.setIcon(Hand_L6);}
+                else if(Handtime == 5){jlbMoG1.setIcon(Hand_L5);}
+                else if(Handtime == 4){jlbMoG1.setIcon(Hand_L4);}
+                else if(Handtime == 3){jlbMoG1.setIcon(Hand_L3);}
+                else if(Handtime == 2){jlbMoG1.setIcon(Hand_L2);}
+                else if(Handtime == 1){jlbMoG1.setIcon(Hand_L1) ; jlbMoG1.setVisible(false) ; Handtime = 0 ; Handw = 27 ;  Handt2.stop();
+                    if(!BosGlock){jlbBoss.setIcon(NBoss_LN);}
+                    else if(BosGlock){jlbBoss.setIcon(GBoss_LN);}}
             }
         });
         leftMot = new Timer(40, new ActionListener() {
@@ -526,7 +536,8 @@ public class Stage extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 if(!BosGlock){jlbBoss.setIcon(NBoss_LA);}
                 else if(BosGlock){jlbBoss.setIcon(GBoss_LA);}
-                jlbMoG1.setBounds(490 , 629 , 557 , 27);
+                Mow1 = 493 ; Moh1 = 629;
+                jlbMoG1.setBounds(Mow1 , Moh1 , 557 , 27);
                 jlbMoG1.setIcon(Hand_L1);
                 jlbMoG1.setVisible(true);
                 Handt1.start();
@@ -535,7 +546,7 @@ public class Stage extends JFrame {
         });
 
         //TEST
-        jlbHatTEST.setBounds(1000 , 600 , 50 , 50);
+        jlbHatTEST.setBounds(493 , 629 , 557 , 27);
         jlbHatTEST2.setBounds(1000 , 600 , 50 , 50);
         jlbHatTEST3.setBounds(1000 , 600 , 50 , 50);
         //this.add(jlbHatTEST);
@@ -545,9 +556,9 @@ public class Stage extends JFrame {
         rightattTEST = new Timer(20, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                jlbHatTEST.setBounds(HawTEST -= 20 , HahTEST , 50 , 50);
+                jlbHatTEST.setBounds(HawTEST -= 13 , HahTEST , 557 , 27);
                 hatimeTEST += 1;
-                if(HawTEST >= Plaw + 65 && HawTEST <= Plaw + 90 && HahTEST >= Plah + 33 && HahTEST <= Plah + 168){
+                if(HawTEST - 54 >= Plaw - 500 && HawTEST - 54 <= Plaw - 410 && HahTEST >= Plah + 33 && HahTEST <= Plah + 168){
                     rightattTEST.stop() ; jlbHatTEST.setVisible(false) ;
                     jlbHPPla.setBounds(fw / 2  - 550 , HPPlay += PlaDamage , 30 , HPPlah -= PlaDamage);
                 }
@@ -583,14 +594,10 @@ public class Stage extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 TESTMUBER += 1;
                 if(TESTMUBER == 5){rightattTEST.start();}
-                else if(TESTMUBER == 10){rightattTEST2.start();}
-                else if(TESTMUBER == 15){rightattTEST3.start();TESTTIMER.stop();}
+                //else if(TESTMUBER == 10){rightattTEST2.start();}
+                //else if(TESTMUBER == 15){rightattTEST3.start();TESTTIMER.stop();}
             }
         });
-
-        //Boss
-        jlbBoss.setBounds(Bosw, Bosh, 200, 200);
-        this.add(jlbBoss);
 
         //HP
         jlbHPPla.setBounds(fw / 2  - 550 , HPPlay , 30 , HPPlah);
@@ -692,9 +699,9 @@ public class Stage extends JFrame {
                     Bosdlock = true;
                     break;
                 case KeyEvent.VK_Q:
-                    HawTEST = 1000;
-                    HahTEST = 600;
-                    jlbHatTEST.setBounds(HawTEST , HahTEST , 50 , 50);
+                    HawTEST = 493;
+                    HahTEST = 629;
+                    jlbHatTEST.setBounds(HawTEST , HahTEST , 557 , 27);
                     jlbHatTEST.setVisible(true);
                     hatimeTEST = 0;
                     HawTEST2 = 1000;
