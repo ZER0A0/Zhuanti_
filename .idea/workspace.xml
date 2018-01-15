@@ -2,6 +2,54 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84517223-e8c4-455d-9374-315b1f3a1daf" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/GBoss_F1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/GBoss_F2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/GBoss_F3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/GBoss_F4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/GBoss_F5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/GBoss_F6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/GBoss_F7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/GBoss_F8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/GBoss_RA.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/GBoss_RAU.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/GBoss_RD.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/GBoss_RN.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/Hand_R1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/Hand_R10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/Hand_R11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/Hand_R12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/Hand_R13.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/Hand_R14.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/Hand_R15.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/Hand_R16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/Hand_R17.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/Hand_R18.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/Hand_R19.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/Hand_R2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/Hand_R20.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/Hand_R3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/Hand_R4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/Hand_R5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/Hand_R6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/Hand_R7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/Hand_R8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/Hand_R9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/NBoss_F1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/NBoss_F2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/NBoss_F3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/NBoss_F4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/NBoss_F5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/NBoss_F6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/NBoss_F7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/NBoss_F8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/NBoss_RA.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/NBoss_RAD.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/NBoss_RD.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Image/NBoss_RN.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Zhuanti_/MainFrame$KeyMonitor.class" afterPath="$PROJECT_DIR$/out/production/Zhuanti_/MainFrame$KeyMonitor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Zhuanti_/MainFrame.class" afterPath="$PROJECT_DIR$/out/production/Zhuanti_/MainFrame.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$1.class" afterPath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$10.class" afterPath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$10.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$11.class" afterPath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$11.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$12.class" afterPath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$12.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$13.class" afterPath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$13.class" />
@@ -11,13 +59,22 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$17.class" afterPath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$17.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$18.class" afterPath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$18.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$19.class" afterPath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$19.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$2.class" afterPath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$20.class" afterPath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$20.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$21.class" afterPath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$21.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$22.class" afterPath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$22.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$23.class" afterPath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$23.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$3.class" afterPath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$4.class" afterPath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$5.class" afterPath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$6.class" afterPath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$7.class" afterPath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$8.class" afterPath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$9.class" afterPath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$9.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$KeyMonitor.class" afterPath="$PROJECT_DIR$/out/production/Zhuanti_/Stage$KeyMonitor.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Zhuanti_/Stage.class" afterPath="$PROJECT_DIR$/out/production/Zhuanti_/Stage.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MainFrame.java" afterPath="$PROJECT_DIR$/src/MainFrame.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Stage.java" afterPath="$PROJECT_DIR$/src/Stage.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -40,11 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainFrame.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainFrame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MainFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+            <state relative-caret-position="668">
+              <caret line="78" column="133" lean-forward="false" selection-start-line="78" selection-start-column="133" selection-end-line="78" selection-end-column="133" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#169#170#0" expanded="true" />
@@ -54,13 +111,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Stage.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Stage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Stage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="476" column="40" lean-forward="true" selection-start-line="476" selection-start-column="40" selection-end-line="476" selection-end-column="40" />
+            <state relative-caret-position="-1958">
+              <caret line="136" column="29" lean-forward="false" selection-start-line="136" selection-start-column="29" selection-end-line="136" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#261#262#0" expanded="true" />
+                <element signature="e#287#288#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,8 +152,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Stage01.java" />
-        <option value="$PROJECT_DIR$/src/MainFrame.java" />
         <option value="$PROJECT_DIR$/src/Stage.java" />
+        <option value="$PROJECT_DIR$/src/MainFrame.java" />
       </list>
     </option>
   </component>
@@ -121,6 +180,8 @@
     <panes>
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -142,8 +203,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -219,6 +278,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -228,7 +288,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23857868" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23857868" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -280,10 +340,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Stage.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10472">
+          <caret line="476" column="40" lean-forward="true" selection-start-line="476" selection-start-column="40" selection-end-line="476" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#169#170#0" expanded="true" />
+            <element signature="e#195#196#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stage.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="11968">
           <caret line="544" column="59" lean-forward="false" selection-start-line="544" selection-start-column="59" selection-end-line="544" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -314,6 +408,8 @@
           <caret line="544" column="59" lean-forward="true" selection-start-line="544" selection-start-column="59" selection-end-line="544" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -344,6 +440,8 @@
           <caret line="336" column="31" lean-forward="false" selection-start-line="336" selection-start-column="31" selection-end-line="336" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -374,6 +472,8 @@
           <caret line="235" column="13" lean-forward="true" selection-start-line="235" selection-start-column="13" selection-end-line="235" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -404,6 +504,8 @@
           <caret line="281" column="70" lean-forward="true" selection-start-line="281" selection-start-column="70" selection-end-line="281" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -434,6 +536,8 @@
           <caret line="23" column="72" lean-forward="true" selection-start-line="23" selection-start-column="72" selection-end-line="23" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -464,6 +568,8 @@
           <caret line="258" column="26" lean-forward="false" selection-start-line="258" selection-start-column="26" selection-end-line="258" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -494,6 +600,8 @@
           <caret line="16" column="72" lean-forward="true" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -524,6 +632,8 @@
           <caret line="242" column="44" lean-forward="true" selection-start-line="242" selection-start-column="44" selection-end-line="242" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -554,6 +664,8 @@
           <caret line="254" column="39" lean-forward="false" selection-start-line="254" selection-start-column="39" selection-end-line="254" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -566,24 +678,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainFrame.java">
+    <entry file="file://$PROJECT_DIR$/src/Stage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        <state relative-caret-position="-1958">
+          <caret line="136" column="29" lean-forward="false" selection-start-line="136" selection-start-column="29" selection-end-line="136" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#169#170#0" expanded="true" />
-            <element signature="e#195#196#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Stage.java">
+    <entry file="file://$PROJECT_DIR$/src/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="476" column="40" lean-forward="true" selection-start-line="476" selection-start-column="40" selection-end-line="476" selection-end-column="40" />
+        <state relative-caret-position="668">
+          <caret line="78" column="133" lean-forward="false" selection-start-line="78" selection-start-column="133" selection-end-line="78" selection-end-column="133" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#169#170#0" expanded="true" />
+            <element signature="e#195#196#0" expanded="true" />
           </folding>
         </state>
       </provider>
